@@ -66,7 +66,7 @@ public class AppController {
 
     @PostMapping("/auth/register/{phone}")
     public String sendSms(@PathVariable String phone) throws IOException {
-        return gson.toJson(sms.send("Welcome to Awesome Company", "3251", new String[]{phone}, false));
+        return gson.toJson(sms.send("Dalton Said Hi", "3251", new String[]{phone}, false));
     }
 
     @PostMapping("/airtime/{phone}")
