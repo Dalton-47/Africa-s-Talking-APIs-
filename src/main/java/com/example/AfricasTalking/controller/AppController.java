@@ -58,7 +58,7 @@ public class AppController {
     private static AirtimeService airtime;
 
 
-    private static final String baseUrl = "https://b38e-196-202-217-130.ngrok-free.app";
+    private static final String baseUrl = " https://8f4b-41-72-192-18.ngrok-free.app";
     private static final String songUrl = "https://upload.wikimedia.org/wikipedia/commons/transcoded/4/49/National_Anthem_of_Kenya.ogg/National_Anthem_of_Kenya.ogg.mp3";
 
     private static final HashMap<String, String> states = new HashMap<>();
@@ -66,7 +66,7 @@ public class AppController {
 
     @PostMapping("/auth/register/{phone}")
     public String sendSms(@PathVariable String phone) throws IOException {
-        return gson.toJson(sms.send("Welcome to Awesome Company", "AT2FA", new String[]{phone}, false));
+        return gson.toJson(sms.send("Welcome to Awesome Company", "3251", new String[]{phone}, false));
     }
 
     @PostMapping("/airtime/{phone}")
